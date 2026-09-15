@@ -7,6 +7,7 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 ### The thesis
 
 - [the-real-moat-is-tooling-not-prompts.md](the-real-moat-is-tooling-not-prompts.md) — why scripts, SOPs, and organically grown standards (not prompting skill) are the actual force multiplier for solo devs and small seed-funded teams.
+- [specialist-in-a-box.md](specialist-in-a-box.md) — why Docker/Kubernetes, Grafana, Traefik, Tailscale, and CI/CD used to require a dedicated devops hire, why AI collapsed that bottleneck, and the operational-judgment cost that didn't collapse with it.
 
 ### Patterns we actually use
 
