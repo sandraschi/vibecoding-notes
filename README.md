@@ -10,6 +10,7 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 
 ### The thesis
 
+- [ai-dev-is-universal-acid.md](ai-dev-is-universal-acid.md) — the specialist-in-a-box argument, generalized past devops: AI dissolves the learning-curve wall for any tool whose difficulty was mostly a huge memorized surface (Blender's thousand-page docs, iOS/Swift's six-month onboarding) — but not the taste/judgment wall underneath it.
 - [the-real-moat-is-tooling-not-prompts.md](the-real-moat-is-tooling-not-prompts.md) — why scripts, SOPs, and organically grown standards (not prompting skill) are the actual force multiplier for solo devs and small seed-funded teams.
 - [specialist-in-a-box.md](specialist-in-a-box.md) — why Docker/Kubernetes, Grafana, Traefik, Tailscale, and CI/CD used to require a dedicated devops hire, why AI collapsed that bottleneck, and the operational-judgment cost that didn't collapse with it.
 
