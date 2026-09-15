@@ -4,6 +4,10 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 
 ## Notes
 
+### Getting started
+
+- [use-the-fleet-or-build-your-own.md](use-the-fleet-or-build-your-own.md) — use the sandraschi fleet (190+ repos) as a reference, or build your own equivalent with the patterns below; plus the fastest way to revive a neglected, half-broken repo: sic your coding agent on the install and let it find the bloopers.
+
 ### The thesis
 
 - [the-real-moat-is-tooling-not-prompts.md](the-real-moat-is-tooling-not-prompts.md) — why scripts, SOPs, and organically grown standards (not prompting skill) are the actual force multiplier for solo devs and small seed-funded teams.
