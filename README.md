@@ -11,6 +11,7 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 
 ### Patterns we actually use
 
+- [meta-tool-swiss-army-pattern.md](meta-tool-swiss-army-pattern.md) — portmanteau tools collapse operation sprawl inside one tool; a meta-tool collapses sprawl across all your tools (scaffold/wrap/probe/audit/operate). Same fix, two altitudes.
 - [named-macros-as-ops-for-agents.md](named-macros-as-ops-for-agents.md) — turn recurring chores into a named macro that expands into a written procedure, so the bar stays the same every time instead of drifting per session.
 - [bug-depot-pattern.md](bug-depot-pattern.md) — one symptom-first file that remembers every bug that cost you more than a few minutes, so you (or an agent) stop rediscovering it.
 - [prove-it-dont-trust-it.md](prove-it-dont-trust-it.md) — why "tests pass, verified" from an agent is a claim, not evidence, and how to make proof a committed artifact instead of a sentence.
