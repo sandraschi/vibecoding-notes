@@ -22,6 +22,18 @@ Everything here gets a one-line editorial comment. Not because I think my opinio
 - **[Iternal.ai LLM Benchmark Repository](https://iternal.ai/llm-benchmark-repository)** — raw scores (SWE-bench Verified, LiveCodeBench, Aider Polyglot, BFCL, Arena ELO) with daily refresh, no editorializing. Good for cross-checking a vendor's cherry-picked benchmark table against the full spread.
 - **[BestLLMfor](https://bestllmfor.com/leaderboard/)** — if you're running local models, this is the more relevant leaderboard than the frontier-model sites above.
 
+## MCP server directories and communities: human editorial vs. automated grading
+
+Two different things get called "MCP server quality" and they're not the same evidence. An automated grader (Glama, ToolBench-style scoring) runs a fixed heuristic against your repo and hands back a letter grade with no idea what it's looking at beyond raw tool count and metadata — it structurally cannot see a webapp dashboard, a native desktop wrapper, or an in-app AI chat layer, because those aren't inputs to its rubric. A grade from one of these is real evidence of *something*, but treat it as evidence about the grader's rubric coverage first and your repo's actual quality second — a D from a bot that only reads flat tool lists is not the same fact as a D from a human who used the thing.
+
+- **r/mcp (Reddit)** — the largest MCP-specific human community; real practitioner discussion, not vendor-fed. Worth checking whether a design choice a grader dings you for (a portmanteau/action-enum pattern, say) is a live contested debate among actual builders or just one scoring bot's baked-in assumption — those are very different problems with very different fixes.
+- **The official MCP Discord** — the other largest hub; ask for `mcp-server-authors` flair for the focused dev channels instead of general chat.
+- **[PulseMCP](https://glama.ai/mcp/best/youtube)** — curated catalog (~1,200+ servers), editorial emphasis on quality over quantity rather than a fixed scoring rubric.
+- **[Gamut](https://www.gamut.so/blog/best-mcp-servers)** — breaks servers down by job-to-be-done with editorial/practical guidance, explicitly not an "official designation" score.
+- **[MCPBundles](https://www.mcpbundles.com/blog/best-mcp-servers)** — curated around servers real teams actually run in production; closer to "does this work for someone" than a static grader output.
+
+**Honest gap, as of this writing:** no specific YouTube channel doing hands-on, non-hype MCP server reviews turned up in a real search — the "YouTube + MCP" results were all servers that *control* YouTube, not channels reviewing MCP servers. If you know of one, it's not represented here; ask r/mcp or the Discord directly rather than trusting a guessed name.
+
 ## Vendor blogs / docs (primary sources — read past the headline number)
 
 - **[DeepSeek API docs / changelog](https://api-docs.deepseek.com/updates/)** — actually publishes pricing changes and peak/off-peak windows in plain text. More useful than most vendor blogs for operational decisions.
