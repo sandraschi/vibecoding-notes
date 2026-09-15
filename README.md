@@ -58,3 +58,7 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 Most "AI coding tips" content is either vendor marketing or outdated within a month. These notes are dated, sourced where possible, and explicitly call out what's vendor-reported vs. independently verified — because in this space, benchmark tables get cherry-picked constantly.
 
 Contributions welcome via PR if you have a similarly concrete, dated, sourced tip.
+
+## House convention: cite your sources, especially on advanced/fast-moving topics
+
+Any note that leans on an external claim, a named pattern from outside our own fleet, or a fast-moving/"advanced" topic (see [goal-driven-scenario-testing.md](goal-driven-scenario-testing.md) for the template) should end with a **Sources** section: the actual links, not just a claim of authority. Notes describing our own directly-used, verified fleet patterns (bug depot, meta-tool, checkpoint commits) don't need this — the source is "we do this," stated as such. External claims do, because "advanced" topics are exactly the ones most likely to be half-remembered from a headline and wrong in a way that's expensive to inherit silently.

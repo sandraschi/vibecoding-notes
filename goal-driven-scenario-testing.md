@@ -25,3 +25,14 @@ This is the same problem as [prove-it-dont-trust-it.md](prove-it-dont-trust-it.m
 ## Where it fits relative to what you already have
 
 Scripted E2E and goal-driven scenario testing aren't competing — they catch different things. Scripted E2E is precise and cheap to run continuously; goal-driven scenarios are more expensive but survive UI drift and can express "does this actual user journey work" in a way a brittle click-script can't. A reasonable split: keep scripted E2E for your tightest, most frequently-run checks, and use goal-driven scenarios for the higher-level journeys (onboarding, checkout, the flows product actually cares about) where resilience to UI churn matters more than millisecond-level precision.
+
+## Sources
+
+This is a fast-moving, still-forming area — treat the specifics as dated 2026-09-15, not settled fact.
+
+- [Scenario-Based Testing: Maxim's Test Suite for Reliable, Production-Ready AI Agents](https://www.getmaxim.ai/articles/scenario-based-testing-reliable-ai-agents/) — the structured test-case-as-data fields (id, goal, initial_state, allowed_tools, fixtures, criteria, budgets, tags) referenced above.
+- [AI Agent Testing Automation: Developer Workflows for 2026 — SitePoint](https://www.sitepoint.com/ai-agent-testing-automation-developer-workflows-for-2026/) — the "sign in, add cheapest item, verify total" style goal example, and the 57%-in-production / 32%-cite-quality-as-top-barrier figures.
+- [9 Agentic Design Patterns for Software Testing in 2026 — TestMu AI](https://www.testmuai.com/blog/agentic-design-patterns/)
+- [Agentic QA Architecture: Reasoning Loops, Self-Healing DOM & Autonomous Testing — TestQuality](https://testquality.com/agentic-qa-architecture-autonomous-testing-2026/) — the self-healing-against-UI-drift framing.
+- [Data-Driven Persona-Conditioned Agents for A/B Test Simulation — arXiv](https://arxiv.org/html/2609.01038v1) — the persona-layering approach.
+- [What Is a Synthetic Persona? — FutureAGI](https://futureagi.com/glossary/synthetic-persona/) — synthetic persona definition and use for coverage gaps.
