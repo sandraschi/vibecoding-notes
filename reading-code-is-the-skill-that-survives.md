@@ -22,6 +22,17 @@ What does transfer:
 - **Read unfamiliar codebases on purpose, regularly**, not only when forced to by a bug. Orienting quickly in code you didn't write and don't remember is a distinct skill from reading your own recent output, and it's the one that degrades fastest from disuse — it's also, not coincidentally, exactly the skill "prove it, don't trust it" requires when the code in question came from an agent instead of your past self.
 - **Do code review for other people's (or other agents') output even when you're not writing much yourself.** Review is reading-skill practice with a built-in accountability loop — you have to form and state an opinion, not just pattern-match "looks fine."
 
+## Triage order: let the linter go first
+
+Reading skill is precious enough that you shouldn't spend it on things a tool already catches for free. Ruff, Biome, and their peers got genuinely excellent — the mechanical categories (a naked `except:` swallowing every exception, an unused import, an obviously-wrong type, inconsistent formatting) are exactly what modern linters find and, for a growing share of them, autofix in the same pass. That's not skimming past a real risk, it's not spending scarce human attention re-deriving what a deterministic tool already solved.
+
+So the actual order:
+
+1. **Run the linter, let it autofix what it can.** Naked excepts, unused imports, formatting drift, a dozen other mechanical smells — that's the linter's job, not a reading exercise for you.
+2. **Read what's left with the attention you saved.** Once the mechanical noise is gone, what remains in the diff is disproportionately the stuff a linter *can't* catch — wrong business logic, a subtly incorrect assumption, a race condition, a fix that solves the symptom instead of the cause. That's where your reading skill actually needs to go, and it's a much smaller, much higher-signal set of lines than "the whole diff."
+
+Getting this order backwards — reading everything with equal attention, mechanical and substantive together — is how reading skill gets spent on the wrong things and feels exhausting for less signal than it should produce. Let the deterministic tool triage first; save your judgment for what only judgment can catch.
+
 ## The honest caveat
 
 This isn't a claim that hand-coding skill is worthless or that everyone should feel fine never doing it again — plenty of domains (safety-critical, deeply performance-sensitive, or just genuinely enjoyable as craft) still reward it, and losing it entirely has real costs for those cases. It's a narrower claim: for most day-to-day delegated coding work, hand-writing is the skill that's optional now, and reading is the one that isn't, and treating both as equally optional is how the actually load-bearing one erodes without anyone noticing until it's needed under pressure.
