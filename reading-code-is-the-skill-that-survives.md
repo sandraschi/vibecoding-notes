@@ -33,6 +33,8 @@ So the actual order:
 
 Getting this order backwards — reading everything with equal attention, mechanical and substantive together — is how reading skill gets spent on the wrong things and feels exhausting for less signal than it should produce. Let the deterministic tool triage first; save your judgment for what only judgment can catch.
 
+This only holds if the linter itself is current. Ruff, Biome, and their peers ship new rules and new autofixes on a fast cadence — a check that didn't exist or wasn't autofixable a couple of quarters ago routinely does now. A pinned, stale linter version quietly hands categories of mechanical noise back to your reading budget that a current one would have caught for free. Update the linter, not just your dependencies, on the same cadence — it's the cheapest possible way to keep buying back reading attention over time.
+
 ## The honest caveat
 
 This isn't a claim that hand-coding skill is worthless or that everyone should feel fine never doing it again — plenty of domains (safety-critical, deeply performance-sensitive, or just genuinely enjoyable as craft) still reward it, and losing it entirely has real costs for those cases. It's a narrower claim: for most day-to-day delegated coding work, hand-writing is the skill that's optional now, and reading is the one that isn't, and treating both as equally optional is how the actually load-bearing one erodes without anyone noticing until it's needed under pressure.
