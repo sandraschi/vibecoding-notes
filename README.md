@@ -13,6 +13,12 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 - [the-real-moat-is-tooling-not-prompts.md](the-real-moat-is-tooling-not-prompts.md) — why scripts, SOPs, and organically grown standards (not prompting skill) are the actual force multiplier for solo devs and small seed-funded teams.
 - [specialist-in-a-box.md](specialist-in-a-box.md) — why Docker/Kubernetes, Grafana, Traefik, Tailscale, and CI/CD used to require a dedicated devops hire, why AI collapsed that bottleneck, and the operational-judgment cost that didn't collapse with it.
 
+### The three bugbears, now (nearly) automated
+
+- [linting-automated-and-still-worth-watching.md](linting-automated-and-still-worth-watching.md) — linting is basically solved, except for the one cheat: an agent under pressure suppressing a lint error (`noqa`, `type: ignore`, `eslint-disable`) instead of fixing it, to get the gate green faster.
+- [testing-coverage-e2e-cua-smoke.md](testing-coverage-e2e-cua-smoke.md) — coverage % is a floor, not a target (watch for assertion-free tests padding it); why you need all three layers — unit, E2E, and CUA smoke tests driving the actual installed app — because each catches failures the others structurally can't.
+- [docs-that-dont-drift.md](docs-that-dont-drift.md) — docs are also basically automatable now, with their own cheat: fluent documentation that describes what code is *supposed* to do instead of what it actually does, which is the hardest of the three cheats to catch because it reads exactly like correct documentation.
+
 ### Patterns we actually use
 
 - [staying-current-without-getting-burned.md](staying-current-without-getting-burned.md) — don't scaffold new repos on a stale framework floor, prefer fast actively-developed tools (Ruff over legacy Python linting, Biome-style over legacy ESLint), actually watch CVE advisories, and give Dependabot-style bots a cooling-off window instead of letting them grab release-day versions.
