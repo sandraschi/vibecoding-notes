@@ -37,6 +37,7 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 ### Reference
 
 - [bibliography.md](bibliography.md) — curated, commented link list: which AI-coding YouTubers to actually trust, which benchmark sites are independent vs. vendor-fed, and the one rule that separates the two.
+- [sonnets-opinion.md](sonnets-opinion.md) — an actual first-person take from Claude Sonnet 5, the model that helped write most of this repo, including where it disagrees with its own thesis and why "prove it, don't trust it" applies specifically to it.
 
 ## Why this exists
 
