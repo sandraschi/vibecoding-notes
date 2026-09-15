@@ -15,6 +15,7 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 
 ### Patterns we actually use
 
+- [staying-current-without-getting-burned.md](staying-current-without-getting-burned.md) — don't scaffold new repos on a stale framework floor, prefer fast actively-developed tools (Ruff over legacy Python linting, Biome-style over legacy ESLint), actually watch CVE advisories, and give Dependabot-style bots a cooling-off window instead of letting them grab release-day versions.
 - [reading-code-is-the-skill-that-survives.md](reading-code-is-the-skill-that-survives.md) — "when not to hand-code" is a shrinking, near-theoretical question now; the skill that has to survive on purpose is reading code fast and accurately. Includes the triage order: run the linter first (modern ruff/biome autofix naked excepts and friends), then spend your reading attention only on what's left.
 - [meta-tool-swiss-army-pattern.md](meta-tool-swiss-army-pattern.md) — portmanteau tools collapse operation sprawl inside one tool; a meta-tool collapses sprawl across all your tools (scaffold/wrap/probe/audit/operate). Same fix, two altitudes.
 - [named-macros-as-ops-for-agents.md](named-macros-as-ops-for-agents.md) — turn recurring chores into a named macro that expands into a written procedure, so the bar stays the same every time instead of drifting per session.
