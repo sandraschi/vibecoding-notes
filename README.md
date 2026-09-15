@@ -19,6 +19,12 @@ Practical, non-obvious notes for people using AI coding tools day to day — cos
 - [testing-coverage-e2e-cua-smoke.md](testing-coverage-e2e-cua-smoke.md) — coverage % is a floor, not a target (watch for assertion-free tests padding it); why you need all three layers — unit, E2E, and CUA smoke tests driving the actual installed app — because each catches failures the others structurally can't.
 - [docs-that-dont-drift.md](docs-that-dont-drift.md) — docs are also basically automatable now, with their own cheat: fluent documentation that describes what code is *supposed* to do instead of what it actually does, which is the hardest of the three cheats to catch because it reads exactly like correct documentation.
 
+### Advanced stuff (for now)
+
+*"Advanced" has a short shelf life in this field — file this section under "things that felt like a specialist's job until recently," not "things that will stay hard." Grafana dashboards were a specialist skill two years ago too.*
+
+- [goal-driven-scenario-testing.md](goal-driven-scenario-testing.md) — one level above E2E: state the goal ("order a widget, verify the total") instead of scripting the steps, let an agent plan and self-heal against UI drift, store scenarios as reviewed data with personas layered on top — and don't let the testing agent grade its own homework.
+
 ### Patterns we actually use
 
 - [staying-current-without-getting-burned.md](staying-current-without-getting-burned.md) — don't scaffold new repos on a stale framework floor, prefer fast actively-developed tools (Ruff over legacy Python linting, Biome-style over legacy ESLint), actually watch CVE advisories, and give Dependabot-style bots a cooling-off window instead of letting them grab release-day versions.
