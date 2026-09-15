@@ -23,9 +23,14 @@ Neither of these was "hard" in the sense of requiring genius — they were hard 
 
 The term is borrowed from Daniel Dennett's description of natural selection as an idea that "dissolves" the traditional boundaries and assumptions of whatever domain it's applied to. The reason it fits here: this isn't a Blender-specific trick or an iOS-specific trick, it's a single underlying mechanism (broad pattern recall standing in for personally-memorized specialist knowledge) that applies to *any* domain whose difficulty was mostly the size and obscurity of its knowledge surface. It corrodes the same wall wherever that wall's material is "nobody documents this well and you just have to have done it a lot" — which turns out to be most walls.
 
-## The part that doesn't dissolve (same caveat as specialist-in-a-box, worth repeating because it's this important)
+## The part that doesn't dissolve — narrower than it first looks
 
-Being able to produce a working Blender script or a compiling Swift app doesn't mean you've acquired an artist's eye for composition, or Apple's actual taste for what makes an app worth shipping, or the judgment for which of several technically-valid approaches will actually hold up. The memorization wall and the taste/judgment wall are different walls. AI dev reliably dissolves the first. It does not reliably substitute for the second — you still have to look at the render and know if it's good, still have to use the app and know if it feels right. That's the same distinction [specialist-in-a-box.md](specialist-in-a-box.md) draws for infrastructure, and it holds here for exactly the same reason.
+Being able to produce a working Blender script or a compiling Swift app doesn't automatically mean the result is good. But "AI can't judge taste" turns out to be the wrong-sized claim — it needs splitting into two different skills that dissolve at very different rates:
+
+- **Recognizing bad taste is much further along than the blanket caveat suggests.** Given a checklist of concrete failure categories, a model can reliably say "this hero section is generic, this help text is buried, this contrast fails accessibility" — see [ai-as-ui-blooper-detector.md](ai-as-ui-blooper-detector.md) for the actual checklist. That's real critique, not a coin flip.
+- **Originating genuinely novel, best-in-class work from a blank page is the part that's still meaningfully behind.** Telling you the existing design is weak is not the same skill as producing the design that replaces it with something excellent and original.
+
+So the honest version isn't "AI has no taste, you still need a human eye for everything." It's: **recognition of quality problems is close to solved when you ask for specific things; origination of exceptional original work is where the gap actually still lives.** Same distinction [specialist-in-a-box.md](specialist-in-a-box.md) draws for infrastructure judgment, just drawn at the right line for design specifically.
 
 ## Sources
 
